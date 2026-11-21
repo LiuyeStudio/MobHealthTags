@@ -1,4 +1,4 @@
-package cn.elvin.mobhealthtags;
+package top.liuyes.mobhealthtags;
 
 import io.papermc.paper.threadedregions.scheduler.ScheduledTask;
 import net.kyori.adventure.text.Component;

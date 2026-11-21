@@ -1,6 +1,6 @@
 name: MobHealthTags
 version: ${project.version}
-main: cn.elvin.mobhealthtags.MobHealthTags
+main: top.liuyes.mobhealthtags.MobHealthTags
 api-version: '1.20'
 folia-supported: true
 softdepend: [MythicMobs]

@@ -19,7 +19,7 @@
 
 ## 安装
 
-1. 下载 `MobHealthTags-1.1.0.jar`。
+1. 下载 `MobHealthTags-1.2.0.jar`。
 2. 放入服务器的 `plugins/` 目录。
 3. 重启服务器，生成 `plugins/MobHealthTags/config.yml`。
 4. 按需修改配置，执行 `/mobhealthtags reload` 生效。
@@ -64,12 +64,12 @@
 ## 从源码构建
 
 ```bash
-git clone <仓库地址>
+git clone https://github.com/LiuyeStudio/MobHealthTags.git
 cd MobHealthTags
 mvn clean package
 ```
 
-产物位于 `target/MobHealthTags-1.1.0.jar`。
+产物位于 `target/MobHealthTags-1.2.0.jar`。
 
 ## 常见问题
 
