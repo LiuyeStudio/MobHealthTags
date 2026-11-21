@@ -1,0 +1,17 @@
+name: MobHealthTags
+version: ${project.version}
+main: cn.elvin.mobhealthtags.MobHealthTags
+api-version: '1.20'
+folia-supported: true
+softdepend: [MythicMobs]
+author: WorkBuddy
+description: 攻击生物后临时显示其中文名字与血量，兼容 MythicMobs
+commands:
+  mobhealthtags:
+    description: 重载 MobHealthTags 配置
+    usage: /mobhealthtags reload
+    permission: mobhealthtags.reload
+permissions:
+  mobhealthtags.reload:
+    description: 允许重载 MobHealthTags 配置
+    default: op

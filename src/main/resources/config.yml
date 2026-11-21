@@ -1,0 +1,52 @@
+# ========== MobHealthTags 配置 ==========
+# 修改后执行 /mobhealthtags reload 生效
+# 触发方式：玩家近战或投射物攻击生物后，显示其名字和血量
+
+# 名称牌显示时长（秒），到期自动还原为原来的名字
+display-seconds: 5
+
+# 到期检查间隔（tick，20 tick = 1 秒）。5 tick = 0.25 秒，足够精确且开销很小
+update-interval: 5
+
+# 血量显示模式: absolute（当前/最大） / percent（百分比） / both（两者都显示）
+health-mode: both
+
+# 是否显示名字（原版生物显示中文名，MythicMobs 优先使用其 Display）
+show-name: true
+
+# 是否显示血量
+show-health: true
+
+# 是否按剩余血量给文字上色（绿 > 黄 > 红）
+health-color: true
+
+# 头顶文字格式，支持占位符：
+#   {name}       生物名称
+#   {health}     当前血量（已按模式格式化并带颜色）
+#   {max_health} 最大血量
+#   {percent}    血量百分比
+#   {heart}      红心符号 ❤
+# 颜色使用 & 符号，例如 &a 绿色、&e 黄色、&c 红色、&7 灰色、&l 粗体
+format: '&f{name} &8[&8{health}&8]'
+
+# 是否覆盖原版生物已有的自定义名字（MythicMobs 不受此限制，始终显示其 Display）
+override-custom-names: false
+
+# 额外需要显示的实体类型（Bukkit EntityType 名称，大写）
+extra-types: []
+# 示例:
+# extra-types:
+#   - VILLAGER
+
+# 排除的实体类型（Bukkit EntityType 名称，大写）
+excluded-types: []
+# 示例:
+# excluded-types:
+#   - ENDER_DRAGON
+
+# MythicMobs 兼容（软依赖：未安装 MythicMobs 时自动跳过）
+mythicmobs:
+  # 是否把 MythicMobs 生物也作为显示目标（它们可能不是原版敌对类型）
+  enabled: true
+  # 是否使用 MythicMobs 配置里的 Display 作为名字（通常是中文）
+  use-display-name: true
